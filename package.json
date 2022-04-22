@@ -1,0 +1,28 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "Customer boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almu-itur/boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "ts",
+    "ssr",
+    "lint",
+    "mui",
+    "i18n",
+    "webpack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/almu-itur/boilerplate/issues"
+  },
+  "homepage": "https://github.com/almu-itur/boilerplate#readme"
+}

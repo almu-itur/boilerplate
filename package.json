@@ -24,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/almu-itur/boilerplate/issues"
   },
-  "homepage": "https://github.com/almu-itur/boilerplate#readme"
+  "homepage": "https://github.com/almu-itur/boilerplate#readme",
+  "devDependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  }
 }

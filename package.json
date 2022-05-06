@@ -26,6 +26,10 @@
     "url": "https://github.com/almu-itur/boilerplate/issues"
   },
   "homepage": "https://github.com/almu-itur/boilerplate#readme",
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.17.10",

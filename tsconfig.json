@@ -1,13 +1,22 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
-    "paths": {
-      "components": ["./components"]
-    },
-    "target": "ESNext",
+    "module": "commonjs", // commonjs works with node (to use ts type checking on node - not compiling)
+    "esModuleInterop": true,
+    "target": "esnext",
+    "noImplicitAny": false,
     "moduleResolution": "node",
-    "jsx": "react-jsx",
-    "esModuleInterop": true
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*"], // everything that is not components url should be taken from node_modules
+      "components": ["src/components/"]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true, // for `import x from "x"
+    "lib": ["es6", "dom", "dom.iterable", "esnext"], // look for these in the project to compile
+    "jsx": "react-jsx" // to avoid import react in tsx files
   },
-  "include": ["src/**/*"]
+  "include": ["**/*.d.ts", "**/*.ts", "**/*.tsx"]
 }

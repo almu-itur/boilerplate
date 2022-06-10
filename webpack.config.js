@@ -1,25 +1,26 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
   mode: "development",
   entry: "./src/index.tsx",
   output: {
-    path: path.resolve(__dirname, "public"),
+    path: path.resolve(__dirname, "dist"),
     filename: "main.js",
   },
-  target: "web",
+  target: "web", // compiling optimized for use of app
   devServer: {
     port: "9500",
-    static: ["./public"],
-    open: true,
+    static: ["./public"], // where to find static files like images
+    open: true, // open browser
     hot: true,
-    liveReload: true,
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".jsx", ".json"],
   },
   module: {
     rules: [
+      // loaders run in inverse order (ts to tsx to jsx)
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
@@ -37,4 +38,9 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+    }),
+  ],
 };

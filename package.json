@@ -29,6 +29,9 @@
   },
   "homepage": "https://github.com/almu-itur/boilerplate#readme",
   "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.9.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },

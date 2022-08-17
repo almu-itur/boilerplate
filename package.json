@@ -4,8 +4,9 @@
   "description": "Customer boilerplate",
   "scripts": {
     "start": "NODE_ENV=development webpack serve",
+    "start:server": "nodemon --watch build --exec \"node dist/main.js\"",
     "watch": "NODE_ENV=development webpack --watch",
-    "build": "NODE_ENV=production webpack",
+    "build:server": "NODE_ENV=production webpack --config webpack.server.js",
     "test": "test",
     "lint": "eslint"
   },
@@ -55,6 +56,7 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "html-webpack-plugin": "^5.5.0",
+    "nodemon": "^2.0.19",
     "path": "^0.12.7",
     "ts-loader": "^9.3.0",
     "typescript": "^4.6.4",
